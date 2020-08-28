@@ -17,7 +17,7 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test",
+    "test": "craco test"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,7 +35,6 @@
     ]
   },
   "devDependencies": {
-    "customize-cra": "^1.0.0",
-    "react-app-rewired": "^2.1.6"
+    "craco-alias": "^2.1.1"
   }
 }

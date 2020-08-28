@@ -1,71 +1,45 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 // import {Button} from 'antd';
-import './App.css';
+import "./App.less";
 
+import { Form, Input, Button, Checkbox } from "antd";
+import { UserOutlined, LockOutlined } from "@ant-design/icons";
 
-import { Form, Input, Button, Checkbox } from 'antd';
-import { UserOutlined, LockOutlined } from '@ant-design/icons';
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { isToggleOn: true };
 
-const App = () => {
-  const onFinish = values => {
-    console.log('Received values of form: ', values);
-  };
+    // 为了在回调中使用 `this`，这个绑定是必不可少的
+    // this.handleClick = this.handleClick.bind(this);
+  }
 
-  return (
-    <Form
-      name="normal_login"
-      className="login-form"
-      initialValues={{
-        remember: true,
-      }}
-      onFinish={onFinish}
-    >
-      <Form.Item
-        name="username"
-        rules={[
-          {
-            required: true,
-            message: 'Please input your Username!',
-          },
-        ]}
-      >
-        <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Username" />
-      </Form.Item>
-      <Form.Item
-        name="password"
-        rules={[
-          {
-            required: true,
-            message: 'Please input your Password!',
-          },
-        ]}
-      >
-        <Input
-          prefix={<LockOutlined className="site-form-item-icon" />}
-          type="password"
-          placeholder="Password"
-        />
-      </Form.Item>
-      <Form.Item>
-        <Form.Item name="remember" valuePropName="checked" noStyle>
-          <Checkbox>Remember me</Checkbox>
-        </Form.Item>
+  handleClick() {
+    this.setState((state) => ({
+      isToggleOn: !state.isToggleOn,
+    }));
+    console.log(this);
+  }
 
-        <a className="login-form-forgot" href="">
-          Forgot password
-        </a>
-      </Form.Item>
+  render() {
+    console.log(this);
+    return (
+      <button onClick={() => this.handleClick()}>
+        {this.state.isToggleOn ? "ON" : "OFF"}
+      </button>
+    );
+  }
+}
 
-      <Form.Item>
-        <Button type="primary" htmlType="submit" className="login-form-button">
-          Log in
-        </Button>
-        Or <a href="">register now!</a>
-      </Form.Item>
-    </Form>
-  );
-};
-
+console.dir(
+  <Form.Item>
+    <Form.Item name="remember" valuePropName="checked" noStyle="1">
+      <Checkbox>Remember me</Checkbox>   
+    </Form.Item>
+    <a className="login-form-forgot" href="">
+      Forgot password
+    </a>
+  </Form.Item>
+);
 
 export default App;
-
