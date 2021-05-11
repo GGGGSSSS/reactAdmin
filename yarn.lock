@@ -3321,6 +3321,11 @@ cosmiconfig@^6.0.0:
     path-type "^4.0.0"
     yaml "^1.7.2"
 
+craco-alias@^2.1.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/craco-alias/-/craco-alias-2.3.1.tgz#6d42b9771491685268b9a6bbeacaa4bbccd41d0b"
+  integrity sha512-i+N5JGpH61QChhfMtZsuy/5btncn9EczOq1XjaPPzBbzmQISAh0JtQhwMzIqefQfSNmRNgh4vePRJwfzroyaSA==
+
 craco-less@^1.16.0:
   version "1.16.0"
   resolved "https://registry.npm.taobao.org/craco-less/download/craco-less-1.16.0.tgz#016d31dfbf9db22f6dfc41ddeadd5b7d35c1fc6c"
@@ -3623,13 +3628,6 @@ csstype@^2.2.0:
   version "2.6.10"
   resolved "https://registry.npm.taobao.org/csstype/download/csstype-2.6.10.tgz?cache=0&sync_timestamp=1586935655811&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcsstype%2Fdownload%2Fcsstype-2.6.10.tgz#e63af50e66d7c266edb6b32909cfd0aabe03928b"
   integrity sha1-5jr1DmbXwmbttrMpCc/Qqr4Dkos=
-
-customize-cra@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npm.taobao.org/customize-cra/download/customize-cra-1.0.0.tgz#73286563631aa08127ad4d30a2e3c89cf4e93c8d"
-  integrity sha1-cyhlY2MaoIEnrU0wouPInPTpPI0=
-  dependencies:
-    lodash.flow "^3.5.0"
 
 cyclist@^1.0.1:
   version "1.0.1"
@@ -5165,9 +5163,9 @@ hoist-non-react-statics@^3.1.0, hoist-non-react-statics@^3.3.2:
     react-is "^16.7.0"
 
 hosted-git-info@^2.1.4:
-  version "2.8.8"
-  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.8.tgz#7539bd4bc1e0e0a895815a2e0262420b12858488"
-  integrity sha512-f/wzC2QaWBs7t9IYqB4T3sR1xviIViXJRJTWBlx2Gf3g0Xi5vI7Yy4koXQ1c9OYDGHN9sBy1DQ2AB8fqZBWhUg==
+  version "2.8.9"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
+  integrity sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==
 
 hpack.js@^2.1.6:
   version "2.1.6"
@@ -6701,11 +6699,6 @@ lodash._reinterpolate@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
   integrity sha1-DM8tiRZq8Ds2Y8eWU4t1rG4RTZ0=
-
-lodash.flow@^3.5.0:
-  version "3.5.0"
-  resolved "https://registry.npm.taobao.org/lodash.flow/download/lodash.flow-3.5.0.tgz#87bf40292b8cf83e4e8ce1a3ae4209e20071675a"
-  integrity sha1-h79AKSuM+D5OjOGjrkIJ4gBxZ1o=
 
 lodash.memoize@^4.1.2:
   version "4.1.2"
@@ -9150,13 +9143,6 @@ react-app-polyfill@^1.0.6:
     raf "^3.4.1"
     regenerator-runtime "^0.13.3"
     whatwg-fetch "^3.0.0"
-
-react-app-rewired@^2.1.6:
-  version "2.1.6"
-  resolved "https://registry.npm.taobao.org/react-app-rewired/download/react-app-rewired-2.1.6.tgz#33ee3076a7f34d6a7c94e649cac67e7c8c580de8"
-  integrity sha1-M+4wdqfzTWp8lOZJysZ+fIxYDeg=
-  dependencies:
-    semver "^5.6.0"
 
 react-dev-utils@^10.2.1:
   version "10.2.1"
